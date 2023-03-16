@@ -1,0 +1,64 @@
+<apex:page docType="html-5.0" applyHtmlTag="false" applyBodyTag="false"
+           showHeader="false" sidebar="false" standardStylesheets="false"
+          title="BigMitzvah.org">
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-RR1EW3JKNL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RR1EW3JKNL');
+</script>
+<style>
+img.image
+{
+    position: absolute;
+    max-width: 80%;
+    top: 10%;
+    left: 10%;
+    border-radius: 0px;
+
+}
+
+img.image:empty
+{
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+  img.image { max-width: 100%; }
+   
+   img.image:empty
+{
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+}
+
+
+</style>
+</head>
+<body style="background-color:#a7c5c0;">
+
+
+<a href = "mailto:info@BigMitzvah.org?subject=BigMitzvah inquiry"><img src="https://s3.amazonaws.com/cdn.bigmitzvah.org/images/logo-white.png" class="image" /></a>
+
+
+
+</body>
+</html>
+</apex:page>
