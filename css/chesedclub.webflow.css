@@ -2541,6 +2541,9 @@ blockquote {
   font-weight: 900;
 }
 
+.btn, .button, .formulaButton, .btnWhatsNew {
+    background-image: none!important;
+}
 .button {
   position: relative;
   padding: 18px 30px;
