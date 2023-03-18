@@ -4540,6 +4540,8 @@ blockquote {
   display: flex;
   margin-top: 20px;
   padding-top: 0px;
+  align-items: center;
+  flex-direction: column;
   /* -webkit-box-pack: center; */
   /* -webkit-justify-content: center; */
   -ms-flex-pack: center;
