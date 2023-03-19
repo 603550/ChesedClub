@@ -2037,6 +2037,12 @@
       letter-spacing: 0vw; 
    }
    
+   #kids_home_mobile { 
+   font-size: 8.5vw!important;
+    line-height: 12vw!important;
+    font-weight: 800;
+   }
+   
   .w-commerce-commercecheckoutemailinput {
     font-size: 16px;
   }
