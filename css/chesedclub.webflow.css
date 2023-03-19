@@ -2028,7 +2028,7 @@
 
    #mobile_signup_logo {
     font-size: 17vw;
-    line-height: 17vw;
+    line-height: 20vw;
    }
    
    #tell_us_mobile {
@@ -8610,7 +8610,7 @@ blockquote {
   }
 
   .section.child {
-    padding-top: 100px;
+    padding-top: 40px;
   }
 
   .container.navbar-container {
