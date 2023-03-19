@@ -2043,6 +2043,12 @@
     font-weight: 800;
    }
    
+   #small_coin {
+    font-weight: 600;
+    font-size: 6vw;
+    line-height: 6vw;
+   }
+   
   .w-commerce-commercecheckoutemailinput {
     font-size: 16px;
   }
