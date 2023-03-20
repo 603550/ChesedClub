@@ -2565,6 +2565,8 @@ blockquote {
   line-height: 30px;
   font-weight: 500;
   letter-spacing: 3px;
+  text-align: center;
+  min-width:200px;
 }
 
 .button-text:hover {
@@ -3933,6 +3935,7 @@ blockquote {
   -ms-grid-row-align: center;
   align-self: center;
   background-color: #c5cbe3;
+   text-align: center;
 }
 
 .button-wrap.charity {
