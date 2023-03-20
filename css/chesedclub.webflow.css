@@ -4,6 +4,10 @@
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
+.home-link.w-inline-block {
+ display:none!important;  
+}
+
 .w-layout-grid {
   display: -ms-grid;
   display: grid;
