@@ -2914,9 +2914,9 @@ blockquote {
   height: 200px;
   max-width: none;
   min-height: 25vh;
-  -webkit-transform: rotate(83deg);
-  -ms-transform: rotate(83deg);
-  transform: rotate(83deg);
+  -webkit-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  transform: rotate(1deg);
 }
 
 .pattern-3 {
@@ -5584,6 +5584,7 @@ blockquote {
   z-index: 2;
   display: block;
   width: 150px;
+  transform: rotate(3deg);
 }
 
 .speaker-date-and-time {
