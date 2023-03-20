@@ -5584,7 +5584,6 @@ blockquote {
   z-index: 2;
   display: block;
   width: 150px;
-  transform: rotate(3deg);
 }
 
 .speaker-date-and-time {
