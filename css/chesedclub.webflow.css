@@ -6,6 +6,8 @@
    ========================================================================== */
 #flex {
    display:flex!important;
+   height: 100%!important;
+   width: 100%!important;
 }
 
 .home-link.w-inline-block {
