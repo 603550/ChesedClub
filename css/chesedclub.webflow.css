@@ -4519,7 +4519,6 @@ blockquote {
 
 .contact-form {
   display: block;
-  width: 55%;
   padding-top: 0px;
 }
 
@@ -4577,6 +4576,7 @@ blockquote {
   /* -webkit-justify-content: center; */
   -ms-flex-pack: center;
   /* justify-content: center; */
+  align-self: center;
 }
 
 .contact-items {
