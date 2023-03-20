@@ -4,6 +4,10 @@
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
+#flex {
+   display:flex!important;
+}
+
 .home-link.w-inline-block {
  display:none!important;  
 }
