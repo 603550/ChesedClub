@@ -2714,7 +2714,7 @@ blockquote {
   display: -ms-flexbox;
   display: flex;
   width: auto;
-  height: 180px;
+  height: auto;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -8554,7 +8554,12 @@ blockquote {
 }
 
 @media screen and (max-width: 479px) {
-  h1 {
+  .pattern-3 {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+   }
+   
+   h1 {
     font-size: 14vw;
     line-height: 16vw;
     text-align: center;
