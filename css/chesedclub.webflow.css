@@ -9742,8 +9742,8 @@ blockquote {
   }
 
   .bold-text-3.story.text.last {
-    margin-top: 29px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
     font-size: 21px;
     line-height: 29px;
     font-weight: 800;
