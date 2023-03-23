@@ -2310,6 +2310,7 @@ blockquote {
 .section.top {
   padding-top: 180px;
   padding-bottom: 1rem;
+  justify-content: center;
 }
 
 .section.top.overflow-hidden {
