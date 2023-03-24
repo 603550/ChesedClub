@@ -6656,11 +6656,13 @@ blockquote {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: Karla, sans-serif;
-  font-size: 28px;
-  line-height: 39px;
-  font-weight: 700;
-  text-align: center;
+    font-family: Karla, sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    max-width: 600px;
+    letter-spacing: 0;
 }
 
 .bold-text-3 {
@@ -8555,7 +8557,11 @@ blockquote {
 }
 
 @media screen and (max-width: 479px) {
-  .pattern-3 {
+  .heading-11 {
+       max-width: 280px;
+   }
+   
+   .pattern-3 {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
    }
