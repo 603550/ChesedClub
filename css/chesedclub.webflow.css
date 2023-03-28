@@ -6697,6 +6697,7 @@ blockquote {
   font-size: 200%;
   font-family: 'KOMIKAX';
   font-weight: 900;
+  letter-spacing: -5px;
 }
 
 .bold-text-3.story.text.last {
