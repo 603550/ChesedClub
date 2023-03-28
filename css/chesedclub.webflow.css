@@ -9,6 +9,7 @@
    height: 100%!important;
    width: 100%!important;
    padding-bottom: 20rem;
+   justify-content: flex-end;
 }
 
 .home-link.w-inline-block {
@@ -6676,6 +6677,13 @@ blockquote {
 
 .bold-text-3.story.text {
   font-family: Karla, sans-serif;
+  color: #455398;
+}
+
+.bold-text-3.story.text::first-letter {
+  font-size: 200%;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 900;
 }
 
 .bold-text-3.story.text.last {
