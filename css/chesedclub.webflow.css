@@ -17,7 +17,7 @@
    Start of custom Webflow CSS
    ========================================================================== */
 .bold-text-3.story.title {
-  font-family: 'KOMIKAX';
+  font-family: 'KOMIKAX'!important;
   font-weight: 900;
 }
 
