@@ -8,8 +8,8 @@
    display:flex!important;
    height: 100%!important;
    width: 100%!important;
-   padding-bottom: 10rem;
-   justify-content: flex-end;
+   padding-bottom: 1rem;
+   justify-content: center;
 }
 
 .home-link.w-inline-block {
