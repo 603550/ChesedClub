@@ -6678,6 +6678,7 @@ blockquote {
 .bold-text-3.story.text {
   font-family: Karla, sans-serif;
   color: #455398;
+  text-align: justify;
 }
 
 .bold-text-3.story.text::first-letter {
