@@ -16,6 +16,12 @@
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
+.bold-text-3.story.title::first-line {
+  font-size: 120%;
+  font-family: 'KOMIKAX';
+  font-weight: 900;
+}
+
 #flex {
    display:flex!important;
    height: 100%!important;
