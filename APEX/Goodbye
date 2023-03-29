@@ -1,0 +1,5 @@
+<apex:page sidebar="false" showHeader="false" controller="GoodByePageController">
+   <center><br/><br/><br/><big> Thank you {!child.FirstName__c}! <apex:outputText rendered="{!debit.Id!=null}"> You gave {!debit.Amount__c} coins for {!debit.Cause__r.Name__c}. {!debit.Cause__r.Thank_You_Text__c}.</apex:outputText>   <br/>   <br/>You have {!child.Balance__c} coins left in your wallet. See you tomorrow!
+    <br/>   <br/>
+    <a href="/apex/kidshome?id={!child.ID__c}">Go to Home Page</a></big></center>
+</apex:page>
