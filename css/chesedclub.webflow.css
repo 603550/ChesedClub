@@ -2070,6 +2070,10 @@
 
 @media screen and (max-width: 479px) {
   
+  .pattern-wrap._25-percent-width.back {
+    width: 50%!important;
+  }
+  
   .bold-text-3.goodbye.text {
       max-width: 350px;
   }
