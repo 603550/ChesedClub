@@ -8610,7 +8610,7 @@ blockquote {
 @media screen and (max-width: 479px) {
   .heading-11 {
      max-width: 280px;
-     height: 250px;
+     max-height: 330px;
    }
    
    .pattern-3 {
