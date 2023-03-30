@@ -2069,6 +2069,11 @@
 }
 
 @media screen and (max-width: 479px) {
+  
+  .bold-text-3.goodbye.text {
+      max-width: 350px;
+  }
+  
    #mobile_padding {
       padding-top: 20px!important;
    }
