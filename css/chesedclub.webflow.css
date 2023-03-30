@@ -3747,6 +3747,7 @@ blockquote {
 
 .simple-pattern._5.back {
   color: #22201d;
+  place-self: center;
 }
 
 .simple-pattern._5.back:hover {
