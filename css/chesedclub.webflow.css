@@ -6872,14 +6872,20 @@ blockquote {
   border: 2px none #000;
 }
 
+.back-story {
+  position:absolute;
+  padding: 4%;
+}
+
 .back {
   margin-top: auto;
   margin-bottom: auto;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
-  padding-left: 0vw;
-  font-size: 6vw;
-  line-height: 5vw;
+  padding-left: 20px;
+  padding-right: 10px!important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  line-height: 30px;
   text-align: center;
   text-transform: none;
 }
