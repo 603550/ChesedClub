@@ -2426,7 +2426,7 @@ blockquote {
   height: 95vh;
   margin-left: 0px;
   padding-top: 0px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   font-size: 14px;
 }
 
@@ -2536,11 +2536,11 @@ blockquote {
   background-color: #f2f4f4;
 }
 
-.color.efe2ba {
+.color.f5f0de {
   border-style: solid;
   border-width: 1px;
   border-color: #f7f0dc;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .color._22201d {
@@ -2850,7 +2850,7 @@ blockquote {
   border-width: 3px;
   border-color: #000 #000 #22201d;
   border-top-right-radius: 100px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   color: #d79922;
 }
 
@@ -2859,7 +2859,7 @@ blockquote {
   padding-left: 18px;
   border-top-left-radius: 100px;
   background-color: #f13c20;
-  color: #efe2ba;
+  color: #f5f0de;
 }
 
 .letter-bg-color.red.title {
@@ -2879,7 +2879,7 @@ blockquote {
   padding-left: 9px;
   border-bottom-left-radius: 75px;
   background-color: #d79922;
-  color: #efe2ba;
+  color: #f5f0de;
   text-align: left;
 }
 
@@ -3023,7 +3023,7 @@ blockquote {
   border-width: 3px;
   border-color: #22201d;
   border-top-right-radius: 300px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .bottom-right-inside-circle {
@@ -3096,7 +3096,7 @@ blockquote {
 }
 
 .play-video-link:hover {
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -3190,7 +3190,7 @@ blockquote {
   border-width: 3px;
   border-color: #22201d;
   background-color: transparent;
-  color: #efe2ba;
+  color: #f5f0de;
   text-align: center;
 }
 
@@ -3220,7 +3220,7 @@ blockquote {
   border-top: 3px solid #22201d;
   border-bottom: 3px solid #22201d;
   background-color: #d79922;
-  color: #efe2ba;
+  color: #f5f0de;
   text-align: center;
 }
 
@@ -3300,7 +3300,7 @@ blockquote {
   border-width: 3px;
   border-color: #22201d;
   border-radius: 2px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .hidden-quantity {
@@ -3419,7 +3419,7 @@ blockquote {
   padding-top: 50px;
   padding-bottom: 50px;
   border-radius: 4px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   box-shadow: 1px 1px 17px 0 rgba(0, 0, 0, 0.07);
   font-family: Karla, sans-serif;
   color: #232222;
@@ -3475,7 +3475,7 @@ blockquote {
   border-width: 3px;
   border-color: #22201d;
   border-radius: 1px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
   font-family: Karla, sans-serif;
@@ -3485,7 +3485,7 @@ blockquote {
 .text-field:hover {
   border-style: solid none solid solid;
   border-color: #d79922;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .text-field:focus {
@@ -3711,7 +3711,7 @@ blockquote {
   border-width: 3px;
   border-color: #22201d;
   border-top-right-radius: 100px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .simple-pattern._2 {
@@ -3897,7 +3897,7 @@ blockquote {
   border-style: solid;
   border-width: 3px;
   border-color: #22201d;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -3933,7 +3933,7 @@ blockquote {
   border-style: solid;
   border-width: 3px;
   border-color: #22201d;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .pattern-5-right-shape {
@@ -4055,7 +4055,7 @@ blockquote {
   border-style: solid solid none;
   border-width: 3px;
   border-color: #22201d;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .speaker-main-image {
@@ -4083,7 +4083,7 @@ blockquote {
   border-style: solid solid solid none;
   border-width: 3px;
   border-color: #22201d;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .speaker-number-wrap.on-cards {
@@ -4478,7 +4478,7 @@ blockquote {
   border-style: solid;
   border-width: 3px;
   border-color: #22201d;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .sponsor-card.community {
@@ -4535,7 +4535,7 @@ blockquote {
   border-width: 2px;
   border-color: #22201d;
   border-radius: 2px 25px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   font-family: Karla, sans-serif;
   color: #22201d;
 }
@@ -4553,7 +4553,7 @@ blockquote {
   margin-right: 0px;
   border-width: 2px;
   border-radius: 2px 25px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   color: #22201d;
 }
 
@@ -4563,7 +4563,7 @@ blockquote {
   border-style: solid;
   border-width: 3px;
   border-color: #22201d;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .textarea:focus {
@@ -4696,7 +4696,7 @@ blockquote {
 }
 
 .news-card-link:hover {
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   box-shadow: 1px 1px 14px 0 rgba(0, 0, 0, 0.1);
   color: #22201d;
   text-decoration: none;
@@ -4840,7 +4840,7 @@ blockquote {
 
 .tabs-content {
   padding-top: 36px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .full-schedule-wrap {
@@ -4925,7 +4925,7 @@ blockquote {
   border-style: solid;
   border-width: 3px;
   border-color: #22201d;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .menu-links-contain {
@@ -5090,7 +5090,7 @@ blockquote {
   border-style: solid;
   border-width: 3px;
   border-color: #22201d;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .facebook {
@@ -5144,7 +5144,7 @@ blockquote {
   border-style: solid;
   border-width: 3px;
   border-color: #22201d;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .more-ticket-info {
@@ -5487,7 +5487,7 @@ blockquote {
   margin-bottom: 20px;
   border-width: 3px;
   border-color: #22201d;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .apply-discount-btn {
@@ -6065,7 +6065,7 @@ blockquote {
   border-left: 2px solid #000;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 25px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -6102,7 +6102,7 @@ blockquote {
   margin-bottom: 0px;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   text-align: center;
 }
 
@@ -6115,7 +6115,7 @@ blockquote {
   border-bottom: 2px solid #000;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 2px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   text-align: center;
 }
 
@@ -6291,7 +6291,7 @@ blockquote {
   border-width: 3px;
   border-color: #22201d;
   border-top-right-radius: 300px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
 }
 
 .botom-right-2 {
@@ -6375,7 +6375,7 @@ blockquote {
   border-style: solid;
   border-width: 3px;
   border-color: #22201d;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -6444,7 +6444,7 @@ blockquote {
   border-width: 3px;
   border-color: #000 #000 #22201d;
   border-top-right-radius: 100px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   color: #d79922;
 }
 
@@ -6455,7 +6455,7 @@ blockquote {
   padding-top: 12px;
   padding-right: 10px;
   padding-left: 8px;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   color: #d79922;
   font-size: 45px;
   text-align: left;
@@ -6510,7 +6510,7 @@ blockquote {
   flex: 0 auto;
   border-top-left-radius: 100px;
   background-color: #f13c20;
-  color: #efe2ba;
+  color: #f5f0de;
   font-size: 45px;
   -webkit-column-count: auto;
   column-count: auto;
@@ -6646,7 +6646,7 @@ blockquote {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #efe2ba;
+  background-color: #f5f0de;
   color: #22201d;
 }
 
@@ -7848,7 +7848,7 @@ blockquote {
 
   .letter-bg-color.title.yellow {
     border-style: solid;
-    background-color: #efe2ba;
+    background-color: #f5f0de;
     color: #d79922;
   }
 
@@ -8800,7 +8800,7 @@ blockquote {
 
   .letter-bg-color {
     border: 3px solid #000;
-    background-color: #efe2ba;
+    background-color: #f5f0de;
     color: #d79922;
   }
 
@@ -8852,7 +8852,7 @@ blockquote {
     display: inline-block;
     padding: 18px 6px 3px 5px;
     border-style: solid;
-    background-color: #efe2ba;
+    background-color: #f5f0de;
     color: #d79922;
   }
 
@@ -9126,7 +9126,7 @@ blockquote {
     margin-left: 0px;
     padding-right: 10px;
     padding-left: 10px;
-    background-color: #efe2ba;
+    background-color: #f5f0de;
   }
 
   .speaker-main-image {
