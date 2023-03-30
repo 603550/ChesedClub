@@ -27,6 +27,7 @@
   right: 0px!important; 
   position: absolute; 
   left: auto;
+  max-width: 30%;
 }
 
 .bold-text-3.goodbye.text {
