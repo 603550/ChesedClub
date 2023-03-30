@@ -16,6 +16,19 @@
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
+.back-story  {
+  display: flex; 
+  justify-content: 
+  space-between; width: 100vw;
+}
+
+#story-pattern {
+  top: 0px!important; 
+  right: 0px!important; 
+  position: absolute; 
+  left: auto;
+}
+
 .bold-text-3.goodbye.text {
   font-size: 1.2rem;
   line-height: 1.7rem;
