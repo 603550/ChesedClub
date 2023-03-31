@@ -33,14 +33,14 @@
 .bold-text-3.goodbye.text {
   font-size: 1.7rem;
   line-height: 2rem;
-  color: #455398;
+  color: #22201d;
   font-family: 'Karla'!important;
   font-weight: 900;
 }
 .bold-text-3.goodbye.link {
   font-size: 1.5rem;
   line-height: 2rem;
-  color: #22201d;
+  color: #d03d32;
   font-family: 'Karla'!important;
   font-weight: 800;
 }
