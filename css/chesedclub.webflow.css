@@ -31,11 +31,11 @@
 }
 
 .bold-text-3.goodbye.text {
-  font-size: 1.2rem;
-  line-height: 1.7rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
   color: #455398;
   font-family: 'Karla'!important;
-  font-weight: 400;
+  font-weight: 900;
 }
 .bold-text-3.goodbye.link {
   font-size: 1.5rem;
