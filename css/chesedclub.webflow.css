@@ -31,8 +31,8 @@
 }
 
 .bold-text-3.goodbye.text {
-  font-size: 1.7rem;
-  line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
   color: #455398;
   font-family: 'Karla'!important;
   font-weight: 700;
@@ -42,8 +42,8 @@
   color: #d79922;
   font-family: 'KOMIKAX'!important;
   font-weight: 900;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
 }
 
 .bold-text-3.goodbye.link {
