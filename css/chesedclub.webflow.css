@@ -3695,7 +3695,7 @@ blockquote {
 }
 
 .pattern-wrap._25-percent-width {
-  position: fixed;
+  position: absolute;
   left: 0%;
   top: 0%;
   right: auto;
