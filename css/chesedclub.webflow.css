@@ -9473,7 +9473,7 @@ blockquote {
     top: -1%;
     right: -45px;
     bottom: auto;
-    display: block;
+    display: none;
     width: 200px;
     height: 100px;
     -webkit-transform: none;
