@@ -2230,6 +2230,7 @@ body {
   color: #22201d;
   font-size: 14px;
   line-height: 20px;
+  background-color: #f5f0de;
 }
 
 h1.relative {
@@ -2367,7 +2368,7 @@ blockquote {
   /* -webkit-align-items: center; */
   -ms-flex-align: center;
   /* align-items: center; */
-  background-color: rgba(239, 226, 186, 0.5);
+  background-color: #f5f0de;
 }
 
 .section.hero {
