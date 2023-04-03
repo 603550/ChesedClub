@@ -26,6 +26,10 @@ padding-top:3px;
   space-between; width: 100vw;
 }
 
+#kids_home_mobile { 
+  font-family:'Karla';  
+}
+
 #story-pattern {
   top: 0px!important; 
   right: 0px!important; 
@@ -38,7 +42,7 @@ padding-top:3px;
   font-size: 1.5rem;
   line-height: 1.4rem;
   color: ##22201d;
-  font-family: 'Titillium Web', sans-serif;
+  font-family:'Karla';
   font-weight: 900;
 }
 
