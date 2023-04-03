@@ -2662,6 +2662,7 @@ blockquote {
   color: #4056a1;
   font-size: 33px;
   font-weight: 900;
+  width: 300px;
 }
 
 .btn, .button, .formulaButton, .btnWhatsNew {
