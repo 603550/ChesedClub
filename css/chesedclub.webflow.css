@@ -6748,11 +6748,11 @@ blockquote {
   display: -ms-flexbox;
   display: flex;
     font-family: Karla, sans-serif;
-    font-size: 1em;
-    line-height: 1.2em;
+    font-size: 2.5vh;
+    line-height: 3.25vh;
     font-weight: 700;
     text-align: center;
-    max-width: 600px;
+    max-width: 900px;
     letter-spacing: 0;
 }
 
