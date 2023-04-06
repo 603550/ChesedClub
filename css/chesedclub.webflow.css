@@ -2793,6 +2793,8 @@ blockquote {
 .button.discover {
   margin-right: 20vw;
   margin-left: 20vw;
+  justify-content: center;
+  place-self: center;
 }
 
 .pattern-1 {
