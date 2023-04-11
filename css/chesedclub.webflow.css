@@ -4021,14 +4021,16 @@ blockquote {
   bottom: 0%;
   width: auto;
   margin-top: auto;
-  margin-right: 1rem;
   margin-bottom: 1.75rem;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
   background-color: #c5cbe3;
-   text-align: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .button-wrap.charity {
