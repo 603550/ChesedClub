@@ -18,41 +18,6 @@
    ========================================================================== */
 
 
-.gender-container.w-container{
-    margin:4px;
-    background-color:#EFEFEF;
-    border-radius:4px;
-    border:1px solid #D0D0D0;
-    overflow:auto;
-    float:left;
-}
-
-.gender-container.w-container:hover {
-    background:red;
-}
-
-.gender-container.w-container label {
-    float:left;
-    width:4.0em;
-}
-
-.gender-container.w-container label span {
-    text-align:center;
-    padding:3px 0px;
-    display:block;
-}
-
-.gender-container.w-container label input {
-    position:absolute;
-    top:-20px;
-}
-
-.gender-container.w-container input:checked + span {
-    background-color:#911;
-    color:#fff;
-}
-
-
 
 .button.w-inline-block {
   display: flex;
