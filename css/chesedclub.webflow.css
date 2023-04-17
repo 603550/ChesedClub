@@ -24,7 +24,7 @@ input[type="radio"]{
 }
  */
 
-.male-wrapper label {
+.male-radio label {
     color:#22201d;
     width:6em;
     border-top-left-radius: 25px;
@@ -38,7 +38,7 @@ input[type="radio"]{
     font-family: Karla, sans-serif;
 }
 
-.female-wrapper label {
+.female-radio label {
     color:#22201d;
     width:6em;
     border-top-left-radius: 25px;
@@ -50,32 +50,32 @@ input[type="radio"]{
     border-color: #22201d; 
 }
 
-.male-wrapper label {
+.male-radio label {
     text-align:center;
     padding:10px 0px;
 }
 
-.female-wrapper label {
+.female-radio label {
     text-align:center;
     padding:10px 0px;
 }
 
-.male-wrapper input:checked + label {
+.male-radio input:checked + label {
     background-color:#4056a1;
     color:#fff;
 }
 
-.female-wrapper input:checked + label {
+.female-radio input:checked + label {
     background-color:#a1408c;
     color:#fff;
 }
 
-.male-wrapper input:hover + label {
+.male-radio input:hover + label {
     background-color:#c5cbe3;
     color:#22201d;
 }
 
-.female-wrapper input:hover + label {
+.female-radio input:hover + label {
     background-color:#e3c5d5;
     color:#22201d;
 }
