@@ -16,7 +16,7 @@
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
-p.parent-address {
+.parent-address {
   text-align:left;
 }
 
@@ -6335,7 +6335,6 @@ blockquote {
 
 .parent-name {
   margin-bottom: 0px;
-  font-size: 20px;
 }
 
 .parent-email {
