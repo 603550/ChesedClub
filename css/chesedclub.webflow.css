@@ -16,13 +16,18 @@
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
-/* 
-input[type="radio"]{
+
+.male-radio[type="radio"] {
   visibility: hidden;
   height:0;
   width:0;
 }
- */
+
+.female-radio[type="radio"] {
+  visibility: hidden;
+  height:0;
+  width:0;
+}
 
 .male-radio + label {
     color:#22201d;
@@ -54,22 +59,22 @@ input[type="radio"]{
     padding:10px 0px;
 }
 
-.male-radio input:checked + label {
+.male-radio:checked + label {
     background-color:#4056a1;
     color:#fff;
 }
 
-.female-radio input:checked + label {
+.female-radio:checked + label {
     background-color:#a1408c;
     color:#fff;
 }
 
-.male-radio input:hover + label {
+.male-radio:hover + label {
     background-color:#c5cbe3;
     color:#22201d;
 }
 
-.female-radio input:hover + label {
+.female-radio:hover + label {
     background-color:#e3c5d5;
     color:#22201d;
 }
