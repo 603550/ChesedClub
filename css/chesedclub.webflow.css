@@ -16,6 +16,17 @@
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
+p.parent-address {
+  text-align:left;
+}
+
+.child-info-container.w-container {
+  min-width: 370px;
+}
+
+.parent-info-container.w-container {
+  min-width: 370px;
+}
 
 .male-radio[type="radio"] {
   visibility: hidden;
