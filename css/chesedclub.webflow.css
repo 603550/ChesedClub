@@ -24,7 +24,7 @@ input[type="radio"]{
 }
  */
 
-.male-radio label {
+.male-radio + label {
     color:#22201d;
     width:6em;
     border-top-left-radius: 25px;
@@ -36,9 +36,11 @@ input[type="radio"]{
     border-color: #22201d; 
     transition: all 350ms ease;
     font-family: Karla, sans-serif;
+    text-align:center;
+    padding:10px 0px;
 }
 
-.female-radio label {
+.female-radio + label {
     color:#22201d;
     width:6em;
     border-top-left-radius: 25px;
@@ -47,15 +49,7 @@ input[type="radio"]{
     margin:10px;
     border-style: solid;
     border-width: 2px;
-    border-color: #22201d; 
-}
-
-.male-radio label {
-    text-align:center;
-    padding:10px 0px;
-}
-
-.female-radio label {
+    border-color: #22201d;
     text-align:center;
     padding:10px 0px;
 }
