@@ -4,7 +4,7 @@ Method: POST
 
 Parameters
 grant_type: password
-username: integrationuser@mada30.com
+username: aws@mada30.com
 password: Chabad770!!
 client_id: 3MVG9gtDqcOkH4PLBu3HK6D3Ewhw1BGi6C2p.5batAPCP4KaLtruapRj3XE9IfQBljjAbNSTx2XTBEz4VxMu0
 client_secret: A08C5F424FFDF2B19C4192F6B3AEB1792D1EEF0086686C305A122BB16C958D6B
