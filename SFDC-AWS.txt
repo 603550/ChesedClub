@@ -1,0 +1,49 @@
+Request 1: To get the access Token
+Endpoint: https://Login.salesforce.com/services/oauth2/token
+Method: POST
+
+Parameters
+grant_type: password
+username: integrationuser@mada30.com
+password: Chabad770!!
+client_id: 3MVG9gtDqcOkH4PLBu3HK6D3Ewhw1BGi6C2p.5batAPCP4KaLtruapRj3XE9IfQBljjAbNSTx2XTBEz4VxMu0
+client_secret: A08C5F424FFDF2B19C4192F6B3AEB1792D1EEF0086686C305A122BB16C958D6B
+
+
+Response:
+{
+    "access_token": "00DDo000001CAUV!ARAAQApbqDlRpRdZmb_DlXuYR9lKudsL653yi6bYtpuBDSiJVeP52zyeJaytsfDMMXpoQrCjk6h0KZkPyXZqLuxJM.4qWQGH",
+    "instance_url": "https://mada30-dev-ed.develop.my.salesforce.com",
+    "id": "https://login.salesforce.com/id/00DDo000001CAUVMA4/005Do000002c4qIIAQ",
+    "token_type": "Bearer",
+    "issued_at": "1689356007844",
+    "signature": "2XVpNA/OZYO4NS/5Mhur9AAc9frw9CQBTu36QI+5XBo="
+}
+
+
+
+Request 2: To call the donation API
+Endpoint: https://mada30-dev-ed.develop.my.salesforce.com/services/apexrest/chesedclub/donate
+Method: POST
+
+Authorization: Oauth2, use the access token from above response
+
+Body: 
+{
+	"ref":"7dngwehNNld0tYZQtntjMszcO0",
+	"debit":5,
+	"cause":"Clothing Depot",
+	"story":"Jacob’s Ladder"
+}
+
+Response: 
+{
+	"ref": "7dngwehNNld0tYZQtntjMszcO0",
+	"status": "Success",
+	"firstName": "Leah",
+	"lastName": "Kakon",
+	"gender": "Female",
+	"balance": "15",
+	"debit": 5,
+	"message": "You have successfully donated 5 coins!"
+}
