@@ -1,0 +1,93 @@
+@RestResource(urlMapping='/chesedclub/donate')
+global class ChesedClubDonateAPIController {
+    @HttpGet
+    global static void httpGet() {
+        string response = '';
+        RestResponse res = RestContext.response;
+      String ref = RestContext.request.params.get('ref');
+        String strDebit = RestContext.request.params.get('debit');
+        Integer debit = 0;
+        If(strDebit!=null && strDebit.trim().length()>0 && Integer.valueOf(strDebit)>0){
+            debit = Integer.valueOf(strDebit);
+        }
+        String cause = RestContext.request.params.get('cause');
+        String story = RestContext.request.params.get('story');
+        
+        List<Child__c> childs = [Select id,ID__c,FirstName__c,LastName__c,Gender__c,Balance__c from Child__c where ID__c=:ref limit 1];
+        If(childs.size()>0){
+            If(debit==null || debit<=0){
+              response = '{"ref": "'+childs[0].ID__c+'","status": "Success","firstName": "'+childs[0].FirstName__c+'","lastName": "'+childs[0].LastName__c+'","gender": "'+childs[0].Gender__c+'","balance": "'+childs[0].Balance__c+'","debit": 0,"message": "Welcome to the Chesed Club"}';    
+            }else If(debit > 0 && debit <=childs[0].Balance__c){
+                Debit__c dbt = new Debit__c();
+                dbt.Child__c = childs[0].Id;
+                dbt.Amount__c = debit;
+                dbt.Cause__c = cause;
+                dbt.Story__c = story;
+                insert dbt;
+                
+                response = '{"ref": "'+childs[0].ID__c+'","status": "Success","firstName": "'+childs[0].FirstName__c+'","lastName": "'+childs[0].LastName__c+'","gender": "'+childs[0].Gender__c+'","balance": "'+(childs[0].Balance__c - debit)+'","debit": '+debit+',"message": "You have successfully donated '+debit+' coins!"}';
+            }else If(debit>0 && debit>childs[0].Balance__c){
+                string message = '';
+                If(childs[0].Balance__c>0){
+                    message = 'You only have '+(childs[0].Balance__c!=null?Integer.valueOf(childs[0].Balance__c):0)+' coins left in your account. Please choose another amount.';
+                }else{
+                    message = 'You do not have any coins in your account. Please contact support.';
+                }
+                
+        response = '{"ref": "'+childs[0].ID__c+'","status": "Error","firstName": "'+childs[0].FirstName__c+'","lastName": "'+childs[0].LastName__c+'","gender": "'+childs[0].Gender__c+'","balance": "'+childs[0].Balance__c+'","debit": 0,"message": "'+message+'"}';
+            }
+        }else{
+            response = '{"ref": "'+ref+'","status": "Error","firstName": "","lastName": "","gender": "","balance": "","debit": ,"message": "We’re sorry, this account was not found."}';
+        }
+        res.statusCode = 200;
+        res.responseBody = Blob.valueOf(response);
+    }
+    
+  @HttpPost
+    global static void httpPost() {
+        RestRequest req = RestContext.request;
+        RestResponse res = RestContext.response;
+        string response = '';
+        String payload = req.requestBody.toString();
+        /*{
+            "ref":"12345",
+            "debit":5,
+            "cause":"Clothing Depot",
+            "story":"Jacob’s Ladder"
+    }*/
+        Map<String, Object> parsedData = (Map<String, Object>) JSON.deserializeUntyped(payload);
+        string ref = (String)parsedData.get('ref');
+        Integer debit = (Integer)parsedData.get('debit');
+        string cause = (String)parsedData.get('cause');
+        string story = (String)parsedData.get('story');
+        
+        List<Child__c> childs = [Select id,ID__c,FirstName__c,LastName__c,Gender__c,Balance__c from Child__c where ID__c=:ref limit 1];
+        If(childs.size()>0){
+            If(debit==null || debit<=0){
+              response = '{"ref": "'+childs[0].ID__c+'","status": "Success","firstName": "'+childs[0].FirstName__c+'","lastName": "'+childs[0].LastName__c+'","gender": "'+childs[0].Gender__c+'","balance": "'+childs[0].Balance__c+'","debit": 0,"message": "Welcome to the Chesed Club"}';    
+            }else If(debit > 0 && debit <=childs[0].Balance__c){
+                Debit__c dbt = new Debit__c();
+                dbt.Child__c = childs[0].Id;
+                dbt.Amount__c = debit;
+                dbt.Cause__c = cause;
+                dbt.Story__c = story;
+                insert dbt;
+                
+                response = '{"ref": "'+childs[0].ID__c+'","status": "Success","firstName": "'+childs[0].FirstName__c+'","lastName": "'+childs[0].LastName__c+'","gender": "'+childs[0].Gender__c+'","balance": "'+(childs[0].Balance__c - debit)+'","debit": '+debit+',"message": "You have successfully donated '+debit+' coins!"}';
+            }else If(debit>0 && debit>childs[0].Balance__c){
+                string message = '';
+                If(childs[0].Balance__c>0){
+                    message = 'You only have '+(childs[0].Balance__c!=null?Integer.valueOf(childs[0].Balance__c):0)+' coins left in your account. Please choose another amount.';
+                }else{
+                    message = 'You do not have any coins in your account. Please contact support.';
+                }
+                
+        response = '{"ref": "'+childs[0].ID__c+'","status": "Error","firstName": "'+childs[0].FirstName__c+'","lastName": "'+childs[0].LastName__c+'","gender": "'+childs[0].Gender__c+'","balance": "'+childs[0].Balance__c+'","debit": 0,"message": "'+message+'"}';
+            }
+        }else{
+            response = '{"ref": "'+ref+'","status": "Error","firstName": "","lastName": "","gender": "","balance": "","debit": ,"message": "We’re sorry, this account was not found."}';
+        }
+        res.statusCode = 200;
+        res.responseBody = Blob.valueOf(response);
+    }
+}
