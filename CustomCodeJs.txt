@@ -1,0 +1,217 @@
+<script>
+var OnLoadCompleteDelegates = []
+OnLoadCompleteDelegates.push(fixNavbar);
+
+var Webflow = Webflow || []
+Webflow.push(function () { // Run the code after the site is fully loaded.  
+	mainScript();
+}) 
+
+// SFDC endpoint URL
+const SFDCUrl = 'https://mada30-dev-ed.develop.my.salesforce-sites.com/pushka/services/apexrest/chesedclub/donate';
+
+function mainScript() {
+
+  // Retrieve the ref ID from the URL query parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  const refId = urlParams.get('ref');
+
+	storedChildData.download(refId, onLoadComplete);
+}
+
+function onLoadComplete()
+{
+  // Call all the delegates.
+  for (const delegate of OnLoadCompleteDelegates) {
+    delegate();
+	}
+}
+
+
+function onDonateClick(){
+  showLoadingScreen();
+  
+  const urlParams = new URLSearchParams(window.location.search);
+  const story = urlParams.get('story') || "";
+  const cause = $("#cause-name").html() || "";
+  const thankYouText = $("#thank-you-text").html() || "";
+  const amount = Number($("#coins-input").val()) || 0;
+  var childData = storedChildData.get();
+
+  // Keep in sesssion for thank you message
+  sessionStorage.setItem("thankYouText", thankYouText);
+  sessionStorage.setItem("cause", cause);
+
+
+  if(amount <= 0){
+    $("#error-message").html("Please a valid number of coins you want to donate");
+    $("#error-panel").css('display', 'block');
+    hideLoadingScreen();
+  } else {
+    storedChildData.donate(childData.ref, cause, story, amount, onChildDonateResponse);
+  }
+}
+
+function onChildDonateResponse(){
+  var childData = storedChildData.get();
+  if(childData.status == "Error"){
+    $("#error-message").html(childData.message);
+    $("#error-panel").css('display', 'block');
+    hideLoadingScreen();
+  }
+  else {
+    location.href = "/kids-success"
+  }
+}
+
+const storedChildData =
+{
+  storageKey: "childData",
+  get: function() {
+    const childDataString = sessionStorage.getItem(storedChildData.storageKey);
+
+    if (childDataString === null) {
+      return undefined;
+    }
+
+    const childData = JSON.parse(childDataString);
+    return childData;
+  },
+  download: async function(refId, onCompelete){
+    if (refId) {
+      const url = SFDCUrl + "?ref=" + refId + "&debit=0&story=&cause=";
+       downloadToSession(url, storedChildData.storageKey, onCompelete)
+    } else {
+      console.log("No ref ID found.");
+      onCompelete()
+    }
+  },
+  donate: async function(refId, cause, story, amount, onCompelete){
+    if (refId) {
+      const url = SFDCUrl + "?ref=" + refId + "&debit=" + amount + "&story=" + story + "&cause=" + cause;
+      downloadToSession(url, storedChildData.storageKey, onCompelete)
+    } else {
+      console.log("No ref ID found.");
+      onCompelete()
+    }
+  }
+}
+
+async function downloadToSession(url, storageKey, onCompelete) {
+
+      try {
+          const response = await fetch(url);
+      
+        if (response.status === 200) {
+            const data = await response.json();
+            // Save the child data to sessionStorage.
+            sessionStorage.setItem(storageKey, JSON.stringify(data));
+            onCompelete()
+          } else {
+            sessionStorage.removeItem(storageKey);
+            console.error("Error:", response.status);
+            onCompelete()
+          }
+      
+      } catch(error) {
+        sessionStorage.removeItem(storageKey);
+        console.error(error);
+        onCompelete()
+      }
+}
+
+function fixNavbar()
+{
+  const childData = storedChildData.get();
+  if(childData) {
+    $("#signup-button").css('display', 'none');
+    $("#signup-link").css('display', 'none');
+
+    $("#home-link").attr("href", "/kids-home");
+    $("#causes-link").attr("href", "/charity-give");
+  }
+}
+
+function displayChildData() {
+	const childData = storedChildData.get();
+  if(childData === undefined) {
+  	displayError();
+    return;
+  }
+  
+
+  // Access the child's data fields
+  const firstName = childData.firstName;
+  const lastName = childData.lastName;
+  const gender = childData.gender;
+  const balance = childData.balance;
+  const debit = childData.debit || 0;
+
+  // Display the child's data on the page
+  $('#first-name').text(firstName);
+  $('#balance').text(balance);
+  
+  if(childData.debit > 0){
+    $('#debit').text(debit);
+    $('#cause').text(sessionStorage.getItem("cause"));
+    $('#thank-you-text').text(sessionStorage.getItem("thankYouText"));
+  }
+
+  hideLoadingScreen();
+}
+
+function hideLoadingScreen(){
+  $('#overlay-screen').css('display', 'none');
+}
+function showLoadingScreen(){
+  $('#overlay-screen').css('display', 'block');
+  $('#loading-screen').css('display', 'block');
+  $('#error-screen').css('display', 'none');
+}
+
+function displayError(){
+  $('#loading-screen').css('display', 'none');
+  $('#error-screen').css('display', 'block');
+}
+</script>
+<style>
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+ } 
+
+.overlay{
+    opacity:1;
+    background-color:#f7f0dc;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
+
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+</style>
